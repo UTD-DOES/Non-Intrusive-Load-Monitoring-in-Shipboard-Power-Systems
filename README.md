@@ -30,5 +30,33 @@ Generates heatmaps for confusion matrices to provide insights into classificatio
 
 # Non Intrusive Fault Detection in Shipboard Power Systems
 
+demonstrates the implementation of a Graph Neural Network (GNN) for fault classification using the Spektral library. It processes tabular data, constructs a graph structure, and applies graph convolutional layers to classify the data effectively.
+
+Key Features:
+Data Preprocessing:
+
+Reads tabular data from a CSV file.
+Normalizes input features using StandardScaler.
+Handles class imbalance with RandomOverSampler.
+Graph Construction:
+
+Constructs an adjacency matrix .
+Encodes the dataset into a graph format suitable for GNN processing using Spektral's Graph and Dataset classes.
+Graph Neural Network Architecture:
+
+Built using Spektral's GCNConv layers with the following structure:
+Two graph convolution layers with ReLU activation.
+Dropout layers to prevent overfitting.
+A fully connected dense layer with softmax activation for multi-class classification.
+Model Training and Evaluation:
+
+Compiles the GNN model with the Adam optimizer and categorical crossentropy loss.
+Trains the model with a validation split and plots the training/validation accuracy and loss curves.
+Evaluates the model on a test set and generates a confusion matrix to visualize performance.
+Visualization:
+
+Heatmap for the confusion matrix to analyze classification results.
+Plots training and validation metrics over epochs.
+
 # Network Reconfiguration in Shipboard Power Systems
 
