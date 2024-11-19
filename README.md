@@ -59,19 +59,27 @@ Plots training and validation metrics over epochs.
 
 # Network Reconfiguration in Shipboard Power Systems
 This part implements a reinforcement learning (RL) approach for reconfiguring shipboard power systems. It utilizes a graph-based representation of the shipboard power system and employs the Proximal Policy Optimization (PPO) algorithm to optimize the system's configuration.
+
 Key Features:
+
 Simulink Integration: Uses MATLAB engine to interface with a Simulink model of a two-zone Medium Voltage DC (MVDC) shipboard power system.
 Custom Gym Environment: Implements a custom OpenAI Gym environment (ShipEnvironment) to simulate the shipboard power system.
 PPO Agent: Implements a PPO agent with separate actor and critic networks for learning optimal reconfiguration strategies.
 Dynamic Action Space: Utilizes a binary action space to control various switches and components in the power system.
 Reward Function: Incorporates a reward function based on generator power outputs, bus voltages, and load powers.
-Visualization: Includes plotting functionality to track training progress, including rewards and losses.
+
+Visualization: 
+
+Includes plotting functionality to track training progress, including rewards and losses.
 Files
 pyinterface.py: Handles the interface between Python and MATLAB/Simulink, including the custom Gym environment.
 TrainingPPO.py: Implements the PPO algorithm and training loop for the reconfiguration task.
-Usage
+
+Usage:
 This project is designed for researchers and engineers working on intelligent control and optimization of shipboard power systems. It demonstrates how reinforcement learning can be applied to complex, graph-based power system reconfiguration problems.
-Requirements
+
+Requirements:
+
 Python 3.x
 TensorFlow
 OpenAI Gym
