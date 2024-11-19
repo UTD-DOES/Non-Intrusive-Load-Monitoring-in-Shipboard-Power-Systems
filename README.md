@@ -32,7 +32,6 @@ Generates heatmaps for confusion matrices to provide insights into classificatio
 
 demonstrates the implementation of a Graph Neural Network (GNN) for fault classification using the Spektral library. It processes tabular data, constructs a graph structure, and applies graph convolutional layers to classify the data effectively.
 
-Key Features:
 Data Preprocessing:
 
 Reads tabular data from a CSV file.
