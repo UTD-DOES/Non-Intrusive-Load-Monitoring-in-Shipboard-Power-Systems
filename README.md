@@ -2,7 +2,7 @@
 This project implements a NILM model using a Convolutional Neural Network (CNN) to process time-series data from simulated electrical systems. The dataset is preprocessed with the SMOTE (Synthetic Minority Over-sampling Technique) algorithm to handle class imbalance effectively.
 
 
-# Data Handling:
+Data Handling:
 
 Loads time-series data from MATLAB .mat files representing simulated electrical system outputs.
 Combines multi-source datasets into a structured 3D tensor for CNN processing.
@@ -10,7 +10,7 @@ Class Imbalance Handling:
 
 Utilizes the SMOTE algorithm to generate balanced datasets by oversampling minority classes.
 
-# Model Architecture:
+Model Architecture:
 
 A 1D Convolutional Neural Network (CNN) with:
 Conv1D for feature extraction.
